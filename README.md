@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Backened
+## Back-end
 
 this code uses backend as REST service. This is available in git (url: https://github.com/Priyankadhavale/ContactAPI.git).
 This needs to run before running angular application.
