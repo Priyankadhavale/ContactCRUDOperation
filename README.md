@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Back-end
 
-this code uses backend as REST service. This is available in git (url: https://github.com/Priyankadhavale/ContactAPI.git).
+this code uses backend as REST service. This is available in git (url:https://github.com/Priyankadhavale/ContactAppAPI.git).
 This needs to run before running angular application.
 
 I have used SQL server as backend . Adding the mdb file of DB along with this API so that on restore will be able to access the data.
