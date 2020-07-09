@@ -1,0 +1,28 @@
+<div class="container" style="margin-top: 70px;">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+        <div>
+            <div *ngIf="contactDetails">
+                <div class="form-group">
+                    <label><h3>Name:</h3> </label>
+                    <p>{{ contactDetails.firstName +' '+contactDetails.lastName }}</p>
+                </div>
+                <label><h3>Email: </h3></label>
+                <p>{{ contactDetails.email }}</p>
+                <label><h3>Phone Number: </h3></label>
+                <p>{{ contactDetails.phoneNumber }}</p>
+                <label><h3>Status: </h3></label>
+                <p>{{ contactDetails.status? 'Active':'InActive' }}</p>
+            </div>
+            <button class="btn btn-outline-primary mb-1 btn-sm" [routerLink]="['']" >
+                Back
+            </button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+

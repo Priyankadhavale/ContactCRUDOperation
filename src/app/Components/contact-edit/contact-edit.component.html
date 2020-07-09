@@ -1,0 +1,34 @@
+<!--component html goes here -->
+<div class="card-body" *ngIf ="contactDetails">
+   
+    <form [formGroup]="contactEditForm" (ngSubmit)= "updateContact(contactEditForm)" ngNativeValidate>
+      
+        <input type="text" [(ngModel)]="contactDetails.id" formControlName = "id" style="display: none;"/>
+        <div class="form-group">
+            <label>First Name: </label>
+            <input type="text" class="form-control" id="formGroupFirstNameInput" placeholder="First Name" [(ngModel)] = "contactDetails.firstName"  formControlName="firstName" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name: </label>
+            <input type="text" class="form-control" id="formGroupLastNameInput" placeholder="Last Name" formControlName="lastName" [(ngModel)] = "contactDetails.lastName"  required>
+          </div>
+         
+          <div class="form-group">
+            <label>Email: </label>
+            <input type="text" class="form-control" id="formGroupEmailInput" placeholder="Email" formControlName="email" [(ngModel)] = "contactDetails.email"  required>
+          </div>
+         
+          <div class="form-group">
+            <label>Phone Number: </label>
+            <input type="text" class="form-control" id="formGroupPhoneNumberInput" placeholder="Phone Number"  formControlName="phoneNumber" [(ngModel)] = "contactDetails.phoneNumber"  required>
+          </div>
+          
+        
+          <input type="hidden" formControlName = "status" [value]="true"/>
+          <p>
+            <button type="submit" class="btn btn-success" >Update Contact</button>
+          </p>
+      </form>
+    
+    </div>
+    
